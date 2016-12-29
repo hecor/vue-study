@@ -12,10 +12,12 @@ Vue.use(VueResource)
 Vue.use(ElementUI)
 
 import MyList from './components/MyList'
+import Login from './components/Login'
 
 var router = new VueRouter({
   routes: [
-    { path: '/mylist', component: MyList }
+    { path: '/mylist', component: MyList },
+    { path: '/login', component: Login }
   ]
 })
 

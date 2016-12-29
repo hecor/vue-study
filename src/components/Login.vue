@@ -31,6 +31,7 @@
           if (result.data.status === 0) {
             console.log('login success')
             console.log(result)
+            this.$emit('login')
           } else {
             console.log(result)
           }

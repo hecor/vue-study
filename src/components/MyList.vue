@@ -1,15 +1,20 @@
 <template>
   <div>
-    <h4>{{ courses.length }}</h4>
+    <Card v-for="item in courses" :card="item"></Card>
   </div>
 </template>
 
 <script>
+  import Card from './Card'
+
   export default {
     data () {
       return {
         courses: []
       }
+    },
+    components: {
+      Card
     },
     created: function () {
       this.$http.post('/api/course/listMy').then((result) => {

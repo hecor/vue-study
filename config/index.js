@@ -29,6 +29,10 @@ module.exports = {
       '/api/course/listMy': {
         target: 'http://localhost:8199',
         changeOrigin: true
+      },
+      '/api/ifLogin': {
+        target: 'http://localhost:8199',
+        changeOrigin: true
       }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
