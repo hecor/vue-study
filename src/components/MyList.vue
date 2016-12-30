@@ -20,6 +20,7 @@
       this.$http.post('/api/course/listMy').then((result) => {
         console.log(result.data)
         this.courses = result.data.data.list
+        this.courses[0].type = ['可以学习', '建议学习']
       }, (err) => {
         console.log(err)
       })
